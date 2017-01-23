@@ -1,0 +1,62 @@
+$online: lightgreen;
+$offline: lightblue;
+$result-list-height: 50px;
+$result-inner-height: 48px;
+
+.status-tab {
+  background-color: lightgray;
+  border-style: solid;
+  border-color: lightskyblue;
+}
+
+.status-tab-selected {
+  background-color: darkgray;
+}
+
+.results {
+
+  .result-list {
+    height: $result-list-height;
+    margin: 2px 0px;
+
+    .online {
+      background-color: $online;
+    }
+
+    .offline {
+      background-color: $offline;
+    }
+
+    .logo .display_name .game {
+      height: $result-inner-height;
+    }
+
+    .display_name {
+      line-height: $result-inner-height;
+      a {
+        text-decoration: none;
+      }
+    }
+
+    .game {
+      line-height: $result-inner-height;
+    }
+  }
+
+  .logo {
+    border-radius: 50%;
+    max-width: 50px;
+    max-height: 50px;
+    width: 100%;
+    height: auto;;
+  }
+
+  .online {
+    background-color: $online;
+  }
+
+  .offline {
+    background-color: $offline;
+  }
+
+}
