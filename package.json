@@ -1,0 +1,25 @@
+{
+  "name": "twitchtv-json",
+  "version": "1.0.0",
+  "description": "Use the Twitchtv JSON API. Checking live demo at https://frankbearzou.github.io/twitchtv-json/",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cp index.* build/",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frankbearzou/twitchtv-json.git"
+  },
+  "author": "Frank Zou",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/frankbearzou/twitchtv-json/issues"
+  },
+  "homepage": "https://frankbearzou.github.io/twitchtv-json",
+  "devDependencies": {
+    "gh-pages": "^0.12.0"
+  }
+}
