@@ -4,7 +4,7 @@
   "description": "Use the Twitchtv JSON API. Checking live demo at https://frankbearzou.github.io/twitchtv-json/",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "pwd",
     "build": "cp index.* build/",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
