@@ -1,3 +1,6 @@
+body {
+  background-color: azure; }
+
 .status-tab {
   background-color: lightgray;
   border-style: solid;
@@ -7,26 +10,27 @@
   background-color: darkgray; }
 
 .results .result-list {
-  height: 50px;
+  height: 54px;
   margin: 2px 0px; }
   .results .result-list .online {
     background-color: lightgreen; }
   .results .result-list .offline {
     background-color: lightblue; }
-  .results .result-list .logo .display_name .game {
-    height: 48px; }
+  .results .result-list .logo {
+    margin-top: 3px; }
+  .results .result-list .vertical-center {
+    margin: 0 auto; }
   .results .result-list .display_name {
     line-height: 48px; }
     .results .result-list .display_name a {
       text-decoration: none; }
   .results .result-list .game {
-    line-height: 48px; }
-.results .logo {
-  border-radius: 50%;
-  max-width: 50px;
-  max-height: 50px;
-  width: 100%;
-  height: auto; }
+    line-height: 48px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    max-width: 100%; }
 .results .online {
   background-color: lightgreen; }
 .results .offline {

@@ -1,7 +1,11 @@
 $online: lightgreen;
 $offline: lightblue;
-$result-list-height: 50px;
+$result-list-height: 54px;
 $result-inner-height: 48px;
+
+body {
+  background-color: azure;
+}
 
 .status-tab {
   background-color: lightgray;
@@ -27,8 +31,12 @@ $result-inner-height: 48px;
       background-color: $offline;
     }
 
-    .logo .display_name .game {
-      height: $result-inner-height;
+    .logo {
+      margin-top: ($result-list-height - $result-inner-height) / 2;
+    }
+
+    .vertical-center {
+      margin: 0 auto;
     }
 
     .display_name {
@@ -40,16 +48,15 @@ $result-inner-height: 48px;
 
     .game {
       line-height: $result-inner-height;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: inline-block;
+      max-width: 100%;
     }
   }
 
-  .logo {
-    border-radius: 50%;
-    max-width: 50px;
-    max-height: 50px;
-    width: 100%;
-    height: auto;;
-  }
+
 
   .online {
     background-color: $online;
